@@ -1,7 +1,7 @@
 // This file includes the functions for the IRC Client
 
 // Function to handle the connection to an IRC server
-void connect_server(void);
+void connect_server(char *IP_ADDR, int PORT);
 
 // Function to receive a message from an IRC server.
 void rx_msg(void);
