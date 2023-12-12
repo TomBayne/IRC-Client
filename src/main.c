@@ -5,7 +5,7 @@
 
 int main(void) {
     int PORT = 6667;
-    char *IP_ADDR = "109.74.200.93";
+    char *IP_ADDR = "108.181.132.149";
     printf("C IRC Client\n");
     
     int socket = connect_server(IP_ADDR, PORT);
