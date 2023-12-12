@@ -13,6 +13,7 @@ int main(void) {
         char *msg = rx_msg(socket);
         printf("%s", msg);
         free(msg);
+        usleep((333 * 1000)); // Throttle message delivery to 3 per second at most
     }
     
 }
