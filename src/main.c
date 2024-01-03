@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "../includes/func.h"
+#define PORT 6667
+#define SERVER_IP "108.181.132.149" // The server to connect to
 
 int main(void) {
-    int PORT = 6667;
-    char *IP_ADDR = "108.181.132.149";
+    int port = PORT;
+    char *IP_ADDR = SERVER_IP;
     printf("C IRC Client\n");
     
     int socket = connect_server(IP_ADDR, PORT);
